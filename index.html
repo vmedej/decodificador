@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsivo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="esquerda">
+            <a href="index.html">
+            <img class="logo-alura" src="images/logo.svg" alt="Logotipo Alura">
+        </a>
+            <form>
+                <textarea id="texto-principal" type="text" placeholder="Digite seu texto..." cols="15" rows="8"></textarea>
+                <div>
+                    <div class="alerta">
+                        <img src="images/warning.svg">
+                        <span>Use apenas letras minúsculas e sem acento.</span>
+                    </div>
+                    <div class="botoes">
+                        <button class="bt-cripto" id="criptografar">
+                            Criptografar
+                            <a><img src="images/cadeado.png" class="criptografar" alt="Cadeado trancado" width="18"></a>
+                        </button>
+                        <button class="bt-descripto" id="descriptografar">
+                            Descriptografar
+                            <a><img src="images/cadeado_aberto.png" class="descriptografar" alt="Cadeado aberto" width="18"></a>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="direita">
+            <div class="sem-retorno">
+                <img src="images/looking.svg" id="mensagem-nao-encontrada" alt="Nenhuma mensagem encontrada" width="230">
+                <h3 class="titulo-sem-retorno">Nenhuma mensagem encontrada!</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+            <div class="texto-criptografado d-none">
+                <p></p>
+                <button class="bt-copiar" id="copiar" onclick="copiarTexto()">
+                    Copiar
+                    <a><img src="images/copiar_conteudo.png" class="descriptografar" alt="Cadeado aberto" width="18"></a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; Desenvolvido por Victória Medej | Julho, 2024.</p>
+        <a target="_blank" href="">
+            <img src="images/linkedin.svg" class="logo-link" alt="linkedin" width="30">
+        </a>
+        <a target="_blank" href="https://github.com/vmedej">
+            <img src="images/github.svg" class="logo-link" alt="github" width="30">
+        </a>
+
+    </footer>
+
+    <script src="js/criptografa-e-descriptografa.js"></script>
+    <script src="js/criptografo.js"></script>
+    <script src="js/copiar.js"></script>
+    <script src="js/text-area.js"></script>
+</body>
+
+</html>
